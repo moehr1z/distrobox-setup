@@ -1,3 +1,3 @@
-FROM moehr1z/fedora:37
+FROM localhost/base
 
-RUN dnf install gnome-tweaks -y
+RUN apt install gnome-tweaks -y

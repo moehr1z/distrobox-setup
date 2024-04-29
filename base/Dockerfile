@@ -1,3 +1,4 @@
-FROM fedora:37
+FROM ubuntu:24.04
 
-RUN dnf install neovim htop tmux tldr man zsh git lm_sensors -y
+RUN apt update && apt upgrade -y
+RUN apt install neovim htop tmux tldr man zsh git lm-sensors yt-dlp -y
